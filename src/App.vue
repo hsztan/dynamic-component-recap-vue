@@ -3,7 +3,9 @@
     <option value="Home">Home</option>
     <option value="About">About</option>
   </select>
-  <component :is="componentName" />
+  <keep-alive>
+    <component :is="componentName" />
+  </keep-alive>
 </template>
 
 <script>
